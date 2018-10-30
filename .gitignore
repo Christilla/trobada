@@ -1,0 +1,9 @@
+.htaccess
+.buildpath
+.settings/
+.project
+.idea/
+.git/
+
+application/controllers/Fixtures.php
+*.png

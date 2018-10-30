@@ -1,0 +1,14 @@
+ul {
+    list-style-type: none;
+    padding: 1;
+}
+li {
+      display: inline;
+}
+p {
+  margin : 5px;
+}
+.core {
+  margin: 250px;
+  text-align: center
+}

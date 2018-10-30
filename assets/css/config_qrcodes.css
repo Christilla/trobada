@@ -1,0 +1,127 @@
+.qrcode-wrap{
+	padding: 1em;
+	width: 100%;
+	height: 100%;
+
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+.qrcode-wrap h1{
+	padding: 0 1em 1em;
+	width: 100%;
+	text-align: right;
+}
+
+.qrcode-wrap > div{
+	display: flex;
+	/*flex-direction: row;*/
+	/*flex-wrap: wrap;*/
+	flex-flow: column;
+	justify-content: space-between;
+	/*overflow: auto;*/
+}
+
+
+
+
+.parent-row-tile{
+	display: flex;
+	width: 100%;
+	height: 100%;
+	flex: 1;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+
+	/*background-color: yellow;*/
+}
+
+.parent-column-tile {
+	display: flex;
+	width: 100%;
+	height: 100%;
+	flex: 1;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+
+	/*background-color: red;*/
+}
+
+.wrap-content {
+	flex-wrap: wrap;
+}
+
+.child-tile {
+	/*background-color: green;*/
+	flex: 1;
+	width: 100%;
+}
+
+.parent-column-tile .child-tile{
+	/*background-color: cadetblue;*/
+	align-self: flex-start;
+	flex-grow: 1;
+}
+
+.vignette-container{
+	/*background-color:darkgray;*/
+	margin: 1em;
+	padding: 0;
+	flex-wrap: wrap;
+	display: flex;
+	flex-direction: row;
+	flex-grow: 0;
+	flex-shrink: 0;
+	flex-basis: 30%;
+	max-width: 30%;
+}
+
+.vignette{
+	/*background-color: hotpink;*/
+	display: flex;
+	flex-direction: row;
+	margin: 0 !important;
+	justify-content: flex-start;
+}
+
+.qrcode{
+	align-self: center;
+}
+
+.description{
+	/*background-color: #3dfdb6;*/
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+	/*flex-wrap: wrap;*/
+	margin-right: auto;
+	justify-content: flex-start;
+	align-items: flex-start;
+}
+
+.description p{
+	padding-left: 0.5em;
+	text-align: left;
+}
+
+.product-content{
+	position: relative;
+	left: 0;
+	min-width: 200px; /* à modifier selon vos besoins */
+	max-width: 200px; /* à modifier selon vos besoins */
+	/*height: 20%;*/
+	/*flex-grow: 0;*/
+	/*flex-shrink: 0;*/
+	overflow: hidden;
+	text-overflow: ellipsis;
+	/*word-break: break-word;*/
+	/*word-wrap: break-word;*/
+	white-space: nowrap;
+}
+
+/*.product-content span{*/
+	/*display: block;*/
+/*}*/

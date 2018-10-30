@@ -1,0 +1,26 @@
+.error, .success{
+	font-family: sans-serif !important;
+	font-size: 0.7em;
+}
+.error{
+	color: red;
+}
+
+.success{
+	color: green;
+}
+
+.fest-details {
+	cursor: pointer;
+}
+
+.my-max-height {
+	max-height: 100%;
+	transition: all .4s;
+}
+
+.my-min-height {
+	max-height: 330px;
+	overflow: hidden;
+	transition: all .4s;
+}
