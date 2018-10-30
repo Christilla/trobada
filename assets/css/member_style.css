@@ -1,0 +1,181 @@
+
+/* Micro reset */
+/**,*:before,*:after{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;margin:0;padding:0;}*/
+/*html, body { height: 100%; width: 100%; font-family: Helvetica, Arial, sans-serif; }*/
+
+/**
+*   SOUS MENU SUR PETIT ÉCRAN
+*/
+
+/*@media screen and (max-width: 990px) {*/
+
+
+
+	/*!* Navigation Menu - Background *!*/
+	/*.nav_items {*/
+		/*!* critical sizing and position styles *!*/
+		/*width: 100%;*/
+		/*height: 100%;*/
+		/*position: fixed;*/
+		/*top: 80px;*/
+		/*right: 0;*/
+		/*bottom: 0;*/
+		/*left: 0;*/
+		/*z-index: 0;*/
+
+		/*!* non-critical appearance styles *!*/
+		/*list-style: none;*/
+		/*background: #094049;*/
+	/*}*/
+
+	/*!* Navigation Menu - List items *!*/
+	/*.nav_item {*/
+		/*!* non-critical appearance styles *!*/
+		/*width: 250px;*/
+		/*!*border-top: 1px solid #222;*!*/
+		/*border-bottom: 1px solid #0c3649;*/
+	/*}*/
+
+	/*.nav_item a {*/
+		/*!* non-critical appearance styles *!*/
+		/*display: block;*/
+		/*padding: 1em;*/
+		/*!*background: linear-gradient(135deg, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%);*!*/
+		/*color: white;*/
+		/*font-size: 1.2em;*/
+		/*text-decoration: none;*/
+		/*transition: color 0.2s, background 0.5s;*/
+	/*}*/
+
+	/*.nav_item a:hover {*/
+		/*color: #c74438;*/
+		/*background: linear-gradient(135deg, rgba(0,0,0,0) 0%,rgba(75,20,20,0.65) 100%);*/
+	/*}*/
+
+	/*!* Site Wrapper - Everything that isn't navigation *!*/
+	/*.dashboard-wrap {*/
+		/*!* Critical position and size styles *!*/
+		/*min-height: 100%;*/
+		/*min-width: 100%;*/
+		/*background-color: white; !* Needs a background or else the nav will show through *!*/
+		/*position: relative;*/
+		/*top: 0;*/
+		/*bottom: 100%;*/
+		/*left: 0;*/
+		/*z-index: 1;*/
+
+		/*!* non-critical apperance styles *!*/
+		/*padding: 1em;*/
+	/*}*/
+
+	/*!* Nav Trigger *!*/
+	/*.nav-trigger {*/
+		/*!* critical styles - hide the checkbox input *!*/
+		/*position: absolute;*/
+		/*clip: rect(0, 0, 0, 0);*/
+	/*}*/
+
+	/*label[for="nav-trigger"] {*/
+		/*!* critical positioning styles *!*/
+		/*position: fixed;*/
+		/*left: 1.9vw; top: 1.9vw;*/
+		/*left: 15px; top: 95px;*/
+		/*background-color: #fff;*/
+		/*z-index: 2;*/
+
+		/*!* non-critical apperance styles *!*/
+		/*height: 30px;*/
+		/*width: 30px;*/
+		/*cursor: pointer;*/
+		/*background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' version='1.1' x='0px' y='0px' width='30px' height='30px' viewBox='0 0 30 30' enable-background='new 0 0 30 30' xml:space='preserve'><rect width='30' height='3'/><rect y='24' width='30' height='3'/><rect y='12' width='30' height='3'/></svg>");*/
+		/*background-size: contain;*/
+	/*}*/
+
+	/*!* Make the Magic Happen *!*/
+	/*.nav-trigger + label, .dashboard-wrap {*/
+		/*transition: left 0.5s, background-color 1.5s;*/
+	/*}*/
+
+	/*.nav-trigger:checked + label {*/
+		/*left: 265px;*/
+		/*background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' version='1.1' x='0px' y='0px' width='30px' height='30px' viewBox='0 0 30 30' enable-background='new 0 0 30 30' xml:space='preserve'>    <rect y='6' width='30' height='3'/><rect y='18' width='30' height='3'/></svg>");*/
+		/*background-size: contain;*/
+	/*}*/
+
+	/*.nav-trigger:checked ~ .dashboard-wrap {*/
+		/*left: 250px;*/
+	/*}*/
+/*}*/
+
+/**
+*   SOUS MENU SUR GRAND ÉCRAN
+*/
+
+@media screen and (min-width: 990px) {
+
+	#body{
+		width: 100%;
+		height: 100%;
+		/*position: fixed;*/
+		/*top: 130px;*/
+		/*right: 100%;*/
+		/*bottom: 100%;*/
+		/*left: 0;*/
+		/*padding: 0;*/
+		border-top-right-radius: 35px;
+		border-top: 8px solid orangered;
+		border-right: 1px solid orangered;
+		/*border-top: 18px solid #B24F00;*/
+		/*border-right: 1px solid indigo;*/
+		display: flex;
+		flex-direction: row;
+	}
+
+	/* Navigation Menu - Background */
+	.nav_items {
+		/* non-critical appearance styles */
+		min-height: 200vh;
+		list-style: none;
+		background: #094049;
+		flex-grow: 1;
+	}
+
+	/* Navigation Menu - List items */
+	.nav_item {
+		/* non-critical appearance styles */
+		width: 260px;
+		border-top: 1px solid #0c3649;
+		border-bottom: 1px solid #0c3649;
+	}
+
+	.nav_item a {
+		/* non-critical appearance styles */
+		display: block;
+		padding: 1em;
+		/*background: linear-gradient(135deg, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%);*/
+		color: white;
+		font-size: 1.2em;
+		text-decoration: none;
+		transition: color 0.5s, background 0.5s;
+	}
+
+	.nav_item a:hover {
+		color: #c74438;
+		color: orangered;
+		background: linear-gradient(135deg, rgba(0,0,0,0) 0%,rgba(75,20,20,0.65) 100%);
+	}
+
+	/* Nav Trigger */
+	.nav-trigger {
+		/* critical styles - hide the checkbox input */
+		position: absolute;
+		clip: rect(0, 0, 0, 0);
+	}
+
+	label[for="nav-trigger"] {
+		/* critical positioning styles */
+		/*position: absolute;*/
+		/*clip: rect(0, 0, 0, 0);*/
+		display: none;
+	}
+}
