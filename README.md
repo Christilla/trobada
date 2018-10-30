@@ -158,11 +158,14 @@ git clone git@gitlab.com:externals-projects/trobada.git
 git clone https://gitlab.com/externals-projects/trobada.git
 ```
 
+<<<<<<< HEAD
 ### Installer les dépendances
 
   - À la racine du projet exécuter cette ligne de commande :
     `composer install`
 
+=======
+>>>>>>> c994417a4c339c740ab06fddb47f03cc584ae868
 ### Gestion des QR Codes
 Donner accès en écriture à l'utilisateur `www-data` sur le dossier/sous dossiers `assets/img`.
 

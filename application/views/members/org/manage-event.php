@@ -36,6 +36,10 @@ if(!empty($events))
 							<li class='col-lg-3 mb-3 col-sm-12'><button id="delete-event" class="action-trigger button is-danger w-100" data-toggle="modal" data-target="#modalDelete"><i class="far fa-times-circle"></i>&nbsp;Évènement</button></li>
 						</ul>
 					</nav>
+<<<<<<< HEAD
+=======
+				</div>
+>>>>>>> c994417a4c339c740ab06fddb47f03cc584ae868
 
 
 				<!--	View part of updating event	-->
